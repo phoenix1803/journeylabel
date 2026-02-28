@@ -9,21 +9,21 @@ const experiences = [
         title: 'Private Island Escapes',
         description: 'Secluded paradises where luxury knows no bounds',
         image: '/images/experience-island.jpg',
-        tag: 'Exclusive',
+        tag: 'Private access',
     },
     {
         id: 2,
         title: 'Cultural Immersions',
         description: 'Authentic encounters with the world\'s most fascinating cultures',
         image: '/images/experience-culture.jpg',
-        tag: 'Bespoke',
+        tag: 'Curated',
     },
     {
         id: 3,
         title: 'Wellness Retreats',
         description: 'Transformative journeys of mind, body and spirit',
         image: '/images/experience-wellness.jpg',
-        tag: 'Rejuvenation',
+        tag: 'Restorative',
     },
 ]
 
@@ -69,7 +69,7 @@ const Experiences = () => {
                             <h3 className="experience-name">{exp.title}</h3>
                             <p className="experience-desc">{exp.description}</p>
                             <Link to="/enquiry" className="experience-link">
-                                Discover More <span>&rarr;</span>
+                                Explore the Agenda <span>&rarr;</span>
                             </Link>
                         </div>
                     </motion.div>
@@ -86,7 +86,7 @@ const Experiences = () => {
                     From honeymoons to milestone celebrations, family voyages to solo
                     expeditions — every journey is uniquely yours.
                 </p>
-                <Link to="/enquiry" className="experiences-cta-btn">Plan Your Experience</Link>
+                <Link to="/enquiry" className="experiences-cta-btn">Begin the Conversation</Link>
             </motion.div>
         </section>
     )

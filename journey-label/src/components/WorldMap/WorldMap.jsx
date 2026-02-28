@@ -146,11 +146,11 @@ const WorldMap = () => {
             .attr('stroke', 'var(--map-border)')
             .attr('stroke-width', 0.5)
             .on('mouseenter', function () {
-                d3.select(this).attr('fill', 'var(--pink-light)')
+                d3.select(this).attr('fill', 'var(--accent-warm-light)')
             })
             .on('mouseleave', function () {
                 const isHighlighted = d3.select(this).classed('highlighted')
-                d3.select(this).attr('fill', isHighlighted ? 'var(--pink)' : 'var(--map-land)')
+                d3.select(this).attr('fill', isHighlighted ? 'var(--accent-warm)' : 'var(--map-land)')
             })
             .on('click', function (event, d) {
                 // Find which continent this country belongs to
@@ -232,7 +232,7 @@ const WorldMap = () => {
                         .classed('highlighted', true)
                         .transition()
                         .duration(500)
-                        .attr('fill', 'var(--pink)')
+                        .attr('fill', 'var(--accent-warm)')
                 }
             })
 

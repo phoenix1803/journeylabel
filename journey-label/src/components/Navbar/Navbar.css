@@ -66,8 +66,8 @@
 }
 
 .theme-toggle:hover {
-    border-color: var(--pink);
-    color: var(--pink);
+    border-color: var(--accent-warm);
+    color: var(--accent-warm);
 }
 
 .navbar-enquire {
@@ -82,8 +82,8 @@
 }
 
 .navbar-enquire:hover {
-    background-color: var(--pink);
-    border-color: var(--pink);
+    background-color: var(--accent-warm);
+    border-color: var(--accent-warm);
     color: #fff;
 }
 
@@ -174,7 +174,7 @@
 
 .menu-main-link:hover,
 .menu-main-link.active {
-    color: var(--pink);
+    color: var(--accent-warm);
 }
 
 .menu-arrow {
@@ -215,7 +215,7 @@
     font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--pink);
+    color: var(--accent-warm);
     margin-bottom: 24px;
 }
 
@@ -236,7 +236,7 @@
 
 .menu-sub-link:hover,
 .menu-sub-link.active {
-    color: var(--pink);
+    color: var(--accent-warm);
     padding-left: 8px;
 }
 
@@ -255,7 +255,7 @@
 }
 
 .menu-back-desktop:hover {
-    color: var(--pink);
+    color: var(--accent-warm);
 }
 
 /* ===== MOBILE MENU ===== */
@@ -284,7 +284,7 @@
 }
 
 .menu-back:hover {
-    color: var(--pink);
+    color: var(--accent-warm);
 }
 
 @media (max-width: 900px) {

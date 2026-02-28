@@ -40,23 +40,15 @@ const Hero = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.2, delay: 2.8 }}
                 >
-                    <motion.p
-                        className="hero-preheading"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 3 }}
-                    >
-                        Ultra-Luxury Travel
-                    </motion.p>
                     <motion.h1
                         className="hero-title"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 3.2 }}
                     >
-                        Journeys Beyond
+                        The Pursuit
                         <br />
-                        <span>Imagination</span>
+                        of Feeling
                     </motion.h1>
                     <motion.p
                         className="hero-subtitle"
@@ -64,7 +56,8 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 3.5 }}
                     >
-                        Bespoke experiences crafted for the world&apos;s most discerning travellers
+                        Travel that transforms. Experiences that
+                        remain long after the journey ends.
                     </motion.p>
                     <motion.div
                         className="hero-cta"
@@ -72,7 +65,10 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 3.8 }}
                     >
-                        <Link to="/enquiry" className="hero-btn">Begin Your Journey</Link>
+                        <Link to="/enquiry" className="hero-btn">
+                            <span className="hero-btn-text">Take Me on a Story</span>
+                            <span className="hero-btn-line" />
+                        </Link>
                     </motion.div>
                 </motion.div>
 

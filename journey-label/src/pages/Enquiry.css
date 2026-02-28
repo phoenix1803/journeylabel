@@ -47,7 +47,7 @@
     font-weight: 500;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--pink);
+    color: var(--accent-warm);
     margin-bottom: 12px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .enquiry-hero-content h1 em {
-    font-style: italic;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -94,16 +94,15 @@
     font-family: var(--font-heading);
     font-size: 1.6rem;
     font-weight: 300;
-    color: var(--pink);
+    color: var(--accent-warm);
 }
 
-.form-group-title h3 {
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-primary);
+font-family: var(--font-body);
+font-size: 0.85rem;
+font-weight: 600;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: var(--text-primary);
 }
 
 .form-row {
@@ -153,8 +152,8 @@
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
-    border-color: var(--pink);
-    box-shadow: 0 0 0 3px var(--pink-glow);
+    border-color: var(--accent-warm);
+    box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
 .form-field input::placeholder,
@@ -193,22 +192,37 @@
 }
 
 .submit-btn {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: var(--pink);
-    padding: 18px 64px;
+    color: var(--text-primary);
+    background: none;
+    border: none;
+    padding: 8px 0;
     cursor: pointer;
-    transition: all 0.35s var(--transition-elegant);
+    transition: color 0.35s var(--transition-elegant);
+}
+
+.submit-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--accent-warm);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover::after {
+    width: 100%;
 }
 
 .submit-btn:hover {
-    background-color: var(--pink-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(233, 30, 99, 0.3);
+    color: var(--accent-warm);
 }
 
 /* ===== Success State ===== */
@@ -230,9 +244,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: var(--pink);
-    color: #ffffff;
-    font-size: 2rem;
+    background-color: var(--accent-warm);
     display: flex;
     align-items: center;
     justify-content: center;

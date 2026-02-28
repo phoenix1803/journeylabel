@@ -26,7 +26,7 @@ const Intro = () => {
                 >
                     We don&apos;t just plan trips.
                     <br />
-                    We craft <em>legacies of experience.</em>
+                    We craft <em>transformative journeys.</em>
                 </motion.h2>
 
                 <motion.p
@@ -49,18 +49,18 @@ const Intro = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <div className="intro-stat">
-                        <span className="intro-stat-number">50+</span>
-                        <span className="intro-stat-label">Countries</span>
+                        <span className="intro-stat-number">6</span>
+                        <span className="intro-stat-label">Continents Covered</span>
                     </div>
                     <div className="intro-stat-divider" />
                     <div className="intro-stat">
-                        <span className="intro-stat-number">1000+</span>
-                        <span className="intro-stat-label">Journeys Crafted</span>
+                        <span className="intro-stat-number">1:1</span>
+                        <span className="intro-stat-label">Client to Concierge</span>
                     </div>
                     <div className="intro-stat-divider" />
                     <div className="intro-stat">
-                        <span className="intro-stat-number">8+</span>
-                        <span className="intro-stat-label">Years of Excellence</span>
+                        <span className="intro-stat-number">100%</span>
+                        <span className="intro-stat-label">Bespoke Itineraries</span>
                     </div>
                 </motion.div>
             </div>

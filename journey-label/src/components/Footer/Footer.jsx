@@ -11,8 +11,8 @@ const Footer = () => {
                             <img src="/images/logo.png" alt="JourneyLabel" className="footer-logo-img" />
                         </Link>
                         <p className="footer-tagline">
-                            Ultra-luxury travel experiences crafted
-                            for the world&apos;s most discerning travellers.
+                            Bespoke travel, designed around the moments
+                            that matter most to you.
                         </p>
                         <div className="footer-socials">
                             <a href="https://www.instagram.com/travelwithjourneylabel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -85,7 +85,8 @@ const Footer = () => {
                     <p>&copy; 2018 — {new Date().getFullYear()} JourneyLabel Private Limited. All rights reserved.</p>
                     <div className="footer-bottom-links">
                         <a href="#">Privacy Policy</a>
-                        <a href="#">Terms &amp; Conditions</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Settings</a>
                         <a href="#">Disclaimer</a>
                     </div>
                 </div>

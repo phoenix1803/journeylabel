@@ -51,7 +51,7 @@
 
 .contact-heading em {
     color: var(--color-cream);
-    font-style: italic;
+    font-style: normal;
 }
 
 .contact-text {

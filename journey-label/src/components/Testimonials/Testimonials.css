@@ -18,8 +18,8 @@
 }
 
 .testimonials-heading em {
-    color: var(--pink-light);
-    font-style: italic;
+    color: var(--accent-warm);
+    font-style: normal;
 }
 
 .testimonials-carousel {

@@ -17,8 +17,8 @@
 }
 
 .gallery-title em {
-    color: var(--pink-light);
-    font-style: italic;
+    color: var(--accent-warm);
+    font-style: normal;
 }
 
 /* Creative mosaic: 2-column layout with alternating large/stack */

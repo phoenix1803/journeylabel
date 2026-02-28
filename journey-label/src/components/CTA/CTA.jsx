@@ -20,13 +20,13 @@ const CTA = () => {
                 transition={{ duration: 0.8 }}
             >
                 <h2 className="cta-heading">
-                    Seeking an Unforgettable<br /><em>Getaway?</em>
+                    Every Journey Begins<br /><em>With a Conversation</em>
                 </h2>
                 <p className="cta-text">
-                    Our luxury travel experts are ready to curate your perfect holiday.
-                    Contact us today to begin planning.
+                    Share your vision with our travel architects. Together, we’ll design
+                    something that feels unmistakably yours.
                 </p>
-                <Link to="/enquiry" className="cta-btn">Say Hello</Link>
+                <Link to="/enquiry" className="cta-btn">Begin the Conversation</Link>
             </motion.div>
         </section>
     )

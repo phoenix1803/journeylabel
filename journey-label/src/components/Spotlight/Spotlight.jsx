@@ -29,7 +29,7 @@ const Spotlight = () => {
                     across coastlines &amp; nature-rich escapes.
                 </p>
                 <Link to="/destinations/new-south-wales" className="spotlight-btn">
-                    Let&apos;s Go
+                    Discuss Your Journey
                 </Link>
             </motion.div>
         </section>

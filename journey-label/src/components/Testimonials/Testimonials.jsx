@@ -59,7 +59,7 @@ const Testimonials = () => {
                         testimony: 'var(--text-secondary)',
                         arrowBackground: 'var(--bg-tertiary)',
                         arrowForeground: 'var(--text-primary)',
-                        arrowHoverBackground: 'var(--pink)',
+                        arrowHoverBackground: 'var(--accent-warm)',
                     }}
                     fontSizes={{
                         name: '1.6rem',
