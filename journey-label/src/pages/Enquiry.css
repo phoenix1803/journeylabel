@@ -99,12 +99,13 @@
     opacity: 0.85;
 }
 
-font-family: var(--font-body);
-font-size: 0.85rem;
-font-weight: 600;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: var(--text-primary);
+.form-group-title h3 {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-primary);
 }
 
 .form-row {
