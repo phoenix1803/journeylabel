@@ -1,0 +1,316 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 48px;
+    transition: all 0.5s var(--transition-elegant);
+}
+
+.navbar--scrolled {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    padding: 14px 48px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] .navbar--scrolled {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.navbar-logo-img {
+    height: 40px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+[data-theme="dark"] .navbar-logo-img {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-logo:hover .navbar-logo-img {
+    opacity: 0.8;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+.navbar-enquire {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    border: 1px solid var(--border-hover);
+    padding: 10px 28px;
+    transition: all 0.3s var(--transition-elegant);
+}
+
+.navbar-enquire:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: #fff;
+}
+
+/* Hamburger */
+.navbar-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.navbar-hamburger span {
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background-color: var(--text-primary);
+    transition: all 0.3s var(--transition-elegant);
+    transform-origin: center;
+}
+
+.navbar-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.navbar-hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.navbar-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== MENU OVERLAY ===== */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-overlay);
+    backdrop-filter: blur(24px);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.menu-overlay-inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+/* ===== DESKTOP MENU ===== */
+.menu-desktop {
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.menu-desktop-main {
+    flex: 0 0 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+    border-right: 1px solid var(--border-color);
+}
+
+.menu-main-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    padding: 12px 0;
+    transition: color 0.3s;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-main-link:hover,
+.menu-main-link.active {
+    color: var(--pink);
+}
+
+.menu-arrow {
+    font-size: 1.2rem;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.menu-main-link:hover .menu-arrow {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.menu-desktop-footer {
+    margin-top: auto;
+    padding-top: 40px;
+}
+
+.menu-desktop-footer p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Sub-panel (desktop) */
+.menu-desktop-sub {
+    flex: 1;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.menu-panel-title {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 24px;
+}
+
+.menu-sub-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-sub-link:hover,
+.menu-sub-link.active {
+    color: var(--pink);
+    padding-left: 8px;
+}
+
+.menu-sub-link .menu-arrow {
+    font-size: 0.9rem;
+}
+
+.menu-back-desktop {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-align: left;
+}
+
+.menu-back-desktop:hover {
+    color: var(--pink);
+}
+
+/* ===== MOBILE MENU ===== */
+.menu-mobile {
+    padding: 20px 28px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.menu-back {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-align: left;
+}
+
+.menu-back:hover {
+    color: var(--pink);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .navbar--scrolled {
+        padding: 12px 20px;
+    }
+
+    .navbar-enquire {
+        display: none;
+    }
+
+    .navbar-logo-img {
+        height: 32px;
+    }
+
+    .menu-main-link {
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+
+    .menu-sub-link {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+}

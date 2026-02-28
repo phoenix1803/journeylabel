@@ -1,0 +1,295 @@
+/* ===== NSW Hero ===== */
+.nsw-hero {
+    position: relative;
+    height: 70vh;
+    min-height: 450px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.nsw-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nsw-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nsw-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(10, 10, 10, 0.15) 0%,
+            rgba(10, 10, 10, 0.7) 100%);
+}
+
+.nsw-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 60px 80px;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.nsw-hero-label {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 12px;
+}
+
+.nsw-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.nsw-hero-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* ===== NSW Intro ===== */
+.nsw-intro {
+    padding: 120px 60px;
+    background-color: var(--bg-primary);
+    transition: background-color 0.5s var(--transition-elegant);
+}
+
+.nsw-intro-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nsw-intro-inner h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 28px;
+}
+
+.nsw-intro-inner p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--text-secondary);
+}
+
+/* ===== NSW Experiences ===== */
+.nsw-experiences {
+    padding: 0 60px 120px;
+    background-color: var(--bg-primary);
+    transition: background-color 0.5s var(--transition-elegant);
+}
+
+.nsw-experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nsw-exp-card {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s var(--transition-elegant);
+}
+
+.nsw-exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nsw-exp-image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.nsw-exp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s var(--transition-elegant);
+}
+
+.nsw-exp-card:hover .nsw-exp-image img {
+    transform: scale(1.05);
+}
+
+.nsw-exp-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.nsw-exp-content {
+    padding: 32px;
+}
+
+.nsw-exp-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.nsw-exp-content p {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.nsw-exp-link {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--pink);
+    transition: color 0.3s;
+}
+
+.nsw-exp-link span {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.nsw-exp-link:hover span {
+    transform: translateX(4px);
+}
+
+/* ===== NSW Highlights ===== */
+.nsw-highlights {
+    padding: 120px 60px;
+    background-color: var(--bg-secondary);
+    transition: background-color 0.5s var(--transition-elegant);
+}
+
+.nsw-highlights-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.nsw-highlights-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--text-primary);
+}
+
+.nsw-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.nsw-highlight-item {
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s var(--transition-elegant);
+}
+
+.nsw-highlight-item:hover {
+    border-color: var(--pink);
+}
+
+.nsw-highlight-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.nsw-highlight-item p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--text-muted);
+}
+
+.nsw-cta {
+    text-align: center;
+}
+
+.nsw-cta-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--pink);
+    padding: 16px 52px;
+    transition: all 0.35s var(--transition-elegant);
+}
+
+.nsw-cta-btn:hover {
+    background-color: var(--pink-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(233, 30, 99, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .nsw-hero-content {
+        padding: 0 24px 60px;
+    }
+
+    .nsw-intro {
+        padding: 80px 24px;
+    }
+
+    .nsw-experiences {
+        padding: 0 24px 80px;
+    }
+
+    .nsw-experiences-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .nsw-highlights {
+        padding: 80px 24px;
+    }
+
+    .nsw-highlights-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .nsw-highlights-grid {
+        grid-template-columns: 1fr;
+    }
+}

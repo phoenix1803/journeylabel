@@ -1,0 +1,9 @@
+.infinite-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.infinite-slider-track {
+    display: flex;
+    width: max-content;
+}

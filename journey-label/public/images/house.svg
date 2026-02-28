@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" fill="none" stroke="#6f6257" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Ground line -->
+  <line x1="20" y1="300" x2="380" y2="300"/>
+  
+  <!-- Main house body -->
+  <rect x="100" y="180" width="200" height="120" rx="2"/>
+  
+  <!-- Roof -->
+  <polyline points="80,180 200,100 320,180"/>
+  
+  <!-- Chimney -->
+  <rect x="250" y="120" width="25" height="60"/>
+  <path d="M255,115 Q262,108 270,115" stroke-width="1"/>
+  
+  <!-- Door -->
+  <rect x="175" y="230" width="50" height="70" rx="25 25 0 0"/>
+  <circle cx="215" cy="270" r="3" fill="#6f6257"/>
+  
+  <!-- Windows -->
+  <rect x="120" y="210" width="35" height="35" rx="2"/>
+  <line x1="137.5" y1="210" x2="137.5" y2="245"/>
+  <line x1="120" y1="227.5" x2="155" y2="227.5"/>
+  
+  <rect x="245" y="210" width="35" height="35" rx="2"/>
+  <line x1="262.5" y1="210" x2="262.5" y2="245"/>
+  <line x1="245" y1="227.5" x2="280" y2="227.5"/>
+  
+  <!-- Trees -->
+  <line x1="50" y1="300" x2="50" y2="220"/>
+  <ellipse cx="50" cy="200" rx="20" ry="30"/>
+  
+  <line x1="350" y1="300" x2="350" y2="230"/>
+  <ellipse cx="350" cy="215" rx="18" ry="25"/>
+  
+  <!-- Path stones -->
+  <ellipse cx="200" y="310" rx="15" ry="5"/>
+  <ellipse cx="185" y="325" rx="12" ry="4"/>
+  <ellipse cx="210" y="338" rx="10" ry="3.5"/>
+  
+  <!-- Birds -->
+  <path d="M140,70 Q145,65 150,70" stroke-width="1"/>
+  <path d="M160,60 Q167,53 174,60" stroke-width="1"/>
+  
+  <!-- Sun rays -->
+  <circle cx="330" cy="60" r="15" stroke-width="1"/>
+  <line x1="330" y1="35" x2="330" y2="25"/>
+  <line x1="350" y1="45" x2="358" y2="38"/>
+  <line x1="355" y1="60" x2="365" y2="60"/>
+  <line x1="310" y1="45" x2="302" y2="38"/>
+  <line x1="305" y1="60" x2="295" y2="60"/>
+</svg>

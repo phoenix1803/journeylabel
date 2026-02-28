@@ -1,0 +1,262 @@
+.world-map-section {
+    padding: 120px 60px;
+    background-color: var(--bg-primary);
+    transition: background-color 0.5s var(--transition-elegant);
+    --map-land: var(--bg-tertiary);
+    --map-border: var(--border-color);
+}
+
+[data-theme="light"] .world-map-section {
+    --map-land: #e8e0d6;
+    --map-border: #d0c8be;
+}
+
+.world-map-header {
+    max-width: 1400px;
+    margin: 0 auto 60px;
+}
+
+.world-map-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.world-map-title em {
+    color: var(--pink-light);
+    font-style: italic;
+}
+
+.world-map-subtitle {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-muted);
+}
+
+.world-map-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.world-map-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.map-label {
+    font-size: 10px;
+    font-weight: 500;
+    fill: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    pointer-events: all;
+    user-select: none;
+}
+
+.map-label:hover {
+    fill: var(--pink);
+}
+
+/* ── Continent pills ── */
+.continent-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.pill {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    color: var(--text-muted);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s var(--transition-elegant);
+}
+
+.pill:hover,
+.pill--active {
+    border-color: var(--pink);
+    color: var(--pink);
+    background: var(--pink-glow);
+}
+
+/* ── Modal ── */
+.map-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.map-modal {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 48px 40px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .map-modal {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .map-modal {
+    background: rgba(20, 20, 20, 0.95);
+}
+
+.map-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+}
+
+.map-modal-close:hover {
+    color: var(--pink);
+}
+
+.map-modal-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.map-modal-subtitle {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 32px;
+}
+
+.map-modal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.map-modal-card {
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s var(--transition-elegant);
+}
+
+.map-modal-card:hover {
+    border-color: var(--pink);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(233, 30, 99, 0.15);
+}
+
+.map-modal-card-img {
+    height: 120px;
+    overflow: hidden;
+}
+
+.map-modal-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.map-modal-card:hover .map-modal-card-img img {
+    transform: scale(1.08);
+}
+
+.map-modal-card-info {
+    padding: 12px;
+}
+
+.map-modal-card-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.map-modal-card-info span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .world-map-section {
+        padding: 80px 20px;
+    }
+
+    .map-modal-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .map-modal-card {
+        display: flex;
+    }
+
+    .map-modal-card-img {
+        width: 100px;
+        height: auto;
+        min-height: 80px;
+    }
+
+    .map-modal-card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .map-modal {
+        padding: 32px 24px;
+    }
+
+    .continent-pills {
+        gap: 6px;
+    }
+
+    .pill {
+        font-size: 0.6rem;
+        padding: 6px 14px;
+    }
+}
