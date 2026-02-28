@@ -1,5 +1,5 @@
 .connoisseur {
-    padding: 120px 5%;
+    padding: 140px 5%;
     background-color: var(--bg-primary);
     transition: background-color 0.5s var(--transition-elegant);
 }
@@ -26,19 +26,19 @@
 .connoisseur-heading {
     font-family: var(--font-heading);
     font-weight: 300;
-    line-height: 1.08;
-    letter-spacing: 0.005em;
+    line-height: 1.12;
+    letter-spacing: -0.005em;
     color: var(--text-primary);
-    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-size: clamp(1.6rem, 3.8vw, 3.2rem);
     padding-bottom: 16px;
 }
 
 .connoisseur-heading .accent {
-    color: var(--text-muted);
+    color: var(--accent-rose, var(--text-muted));
 }
 
 [data-theme="light"] .connoisseur-heading .accent {
-    color: #6f6257;
+    color: #8a6b72;
 }
 
 .connoisseur-text {
@@ -52,7 +52,7 @@
 }
 
 [data-theme="light"] .connoisseur-text {
-    color: #6a5a4a;
+    color: #6a5f5f;
 }
 
 .connoisseur-right {

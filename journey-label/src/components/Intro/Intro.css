@@ -1,5 +1,5 @@
 .intro {
-    padding: 160px 60px;
+    padding: 180px 72px;
     background-color: var(--bg-primary);
     transition: background-color 0.5s var(--transition-elegant);
 }
@@ -35,11 +35,12 @@
 
 .intro-heading {
     font-family: var(--font-heading);
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 400;
-    line-height: 1.3;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.25;
     color: var(--text-primary);
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+    letter-spacing: -0.01em;
 }
 
 .intro-heading em {
@@ -48,12 +49,13 @@
 }
 
 .intro-text {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 300;
-    line-height: 1.9;
+    line-height: 2;
     color: var(--text-secondary);
-    max-width: 700px;
-    margin: 0 auto 60px;
+    max-width: 680px;
+    margin: 0 auto 68px;
+    letter-spacing: 0.2px;
 }
 
 .intro-stats {
