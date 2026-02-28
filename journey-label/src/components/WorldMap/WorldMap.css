@@ -1,5 +1,5 @@
 .world-map-section {
-    padding: 120px 60px;
+    padding: 140px 72px;
     background-color: var(--bg-primary);
     transition: background-color 0.5s var(--transition-elegant);
     --map-land: var(--bg-tertiary);
@@ -18,10 +18,11 @@
 
 .world-map-title {
     font-family: var(--font-heading);
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: clamp(2.2rem, 3.8vw, 3.2rem);
     font-weight: 300;
     color: var(--text-primary);
     margin-bottom: 12px;
+    letter-spacing: -0.01em;
 }
 
 .world-map-title em {
@@ -183,7 +184,7 @@
 .map-modal-card:hover {
     border-color: var(--accent-warm);
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(176, 158, 126, 0.15);
+    box-shadow: 0 8px 24px rgba(196, 136, 154, 0.12);
 }
 
 .map-modal-card-img {

@@ -36,7 +36,7 @@
 .about-hero-content {
     position: relative;
     z-index: 2;
-    padding: 0 60px 80px;
+    padding: 0 72px 100px;
     max-width: 1600px;
     width: 100%;
 }
@@ -53,15 +53,16 @@
 
 .about-hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    font-weight: 400;
+    font-size: clamp(2.8rem, 6.5vw, 5rem);
+    font-weight: 300;
     color: #ffffff;
-    line-height: 1.15;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
 }
 
 /* ===== Story ===== */
 .about-story {
-    padding: 140px 60px;
+    padding: 160px 72px;
     background-color: var(--bg-primary);
     transition: background-color 0.5s var(--transition-elegant);
 }
@@ -105,7 +106,7 @@
 
 /* ===== Values ===== */
 .about-values {
-    padding: 140px 60px;
+    padding: 160px 72px;
     background-color: var(--bg-secondary);
     transition: background-color 0.5s var(--transition-elegant);
 }
@@ -140,16 +141,17 @@
 .about-value-card:hover {
     border-color: var(--accent-warm);
     transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-md), var(--shadow-glow);
 }
 
 .about-value-num {
     font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 300;
-    color: var(--accent-warm);
+    color: var(--accent-pink, var(--accent-warm));
     display: block;
     margin-bottom: 20px;
+    opacity: 0.85;
 }
 
 .about-value-card h3 {
@@ -201,15 +203,15 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+    gap: 6px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--text-primary);
     background: none;
     padding: 8px 0;
-    transition: color 0.35s var(--transition-elegant);
+    transition: color 0.4s var(--transition-elegant);
 }
 
 .about-cta-btn::after {
@@ -217,8 +219,8 @@
     display: block;
     width: 0;
     height: 1px;
-    background: var(--accent-warm);
-    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--accent-pink, var(--accent-warm));
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-cta-btn:hover::after {

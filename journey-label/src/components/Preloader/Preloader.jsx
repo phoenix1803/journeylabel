@@ -27,7 +27,10 @@ const Preloader = ({ onComplete }) => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
                     >
-                        <div className="preloader-logo">JourneyLabel</div>
+                        <div className="preloader-logo">
+                            <span className="preloader-logo-journey">Journey</span>
+                            <span className="preloader-logo-label">Label</span>
+                        </div>
                         <div className="preloader-line">
                             <motion.div
                                 className="preloader-line-fill"

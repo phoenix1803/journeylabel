@@ -8,7 +8,8 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="footer-brand">
                         <Link to="/" className="footer-logo-link">
-                            <img src="/images/logo.png" alt="JourneyLabel" className="footer-logo-img" />
+                            <span className="footer-logo-journey">Journey</span>
+                            <span className="footer-logo-label">Label</span>
                         </Link>
                         <p className="footer-tagline">
                             Bespoke travel, designed around the moments

@@ -36,7 +36,7 @@
 .enquiry-hero-content {
     position: relative;
     z-index: 2;
-    padding: 0 60px 60px;
+    padding: 0 72px 72px;
     max-width: 1600px;
     width: 100%;
 }
@@ -53,10 +53,11 @@
 
 .enquiry-hero-content h1 {
     font-family: var(--font-heading);
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: clamp(2.4rem, 5.5vw, 4.5rem);
     font-weight: 300;
     color: #ffffff;
-    line-height: 1.15;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
 }
 
 .enquiry-hero-content h1 em {
@@ -66,7 +67,7 @@
 
 /* ===== Form Section ===== */
 .enquiry-form-section {
-    padding: 100px 60px 120px;
+    padding: 120px 72px 140px;
     background-color: var(--bg-primary);
     transition: background-color 0.5s var(--transition-elegant);
 }
@@ -94,7 +95,8 @@
     font-family: var(--font-heading);
     font-size: 1.6rem;
     font-weight: 300;
-    color: var(--accent-warm);
+    color: var(--accent-pink, var(--accent-warm));
+    opacity: 0.85;
 }
 
 font-family: var(--font-body);
@@ -195,17 +197,17 @@ color: var(--text-primary);
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+    gap: 6px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--text-primary);
     background: none;
     border: none;
     padding: 8px 0;
     cursor: pointer;
-    transition: color 0.35s var(--transition-elegant);
+    transition: color 0.4s var(--transition-elegant);
 }
 
 .submit-btn::after {
@@ -213,8 +215,8 @@ color: var(--text-primary);
     display: block;
     width: 0;
     height: 1px;
-    background: var(--accent-warm);
-    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--accent-pink, var(--accent-warm));
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover::after {
